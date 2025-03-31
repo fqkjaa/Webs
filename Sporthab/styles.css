@@ -1,0 +1,372 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #cce7ff; 
+}
+
+
+header {
+    background-color: #cce7ff; 
+    padding: 20px;
+}
+
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.menu a {
+    text-decoration: none;
+    font-size: 24px; 
+    color: #000; 
+    font-weight: bold;
+}
+
+.menu a:nth-child(2) {
+    font-size: 28px; 
+    font-weight: 600; 
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #d4e7fa; 
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.section_1 {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.section_1 h3 {
+    font-size: 24px;
+    font-weight: 400;
+    color: #000;
+    line-height: 1.6;
+}
+
+.section_1 img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+button {
+    background: linear-gradient(to right, #61b9e8, #66d29e);
+    border: none;
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+.catalog {
+    padding: 40px;
+    text-align: center;
+}
+
+.catalog h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    justify-content: center;
+}
+
+.product {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.product p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #333;
+}
+
+.product p:first-of-type {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.product p:last-of-type {
+    color: #555;
+    font-size: 14px;
+}
+
+.discounts {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e0f7fa;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 40px auto;
+    max-width: 1200px;
+    height: 200px;
+}
+
+.discounts h3 {
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    margin-left: 40px;
+}
+
+.discounts form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 0 auto;
+}
+
+.discounts input[type="email"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 250px;
+}
+
+.discounts p {
+    font-size: 24px;
+    margin: 0;
+    color: #007bff;
+    background: #e0f7fa;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.discounts button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.discounts button:hover {
+    background-color: #0056b3;
+}
+
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #d4e7fa;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.info_part_1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding-top: 2.5%;
+
+}
+
+.info_part_1 h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.brand_image {
+    width: 200px;
+    height: auto;
+    margin: 5px;
+}
+
+
+.info_part_2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    padding-top: 8%;
+    padding-bottom: 2.5%;
+}
+
+.ip2_h3 {
+    font-size: 20px;
+    margin: 5px 0;
+    text-align: center; 
+}
+
+
+h3 {
+    color: #00796b; 
+}
+
+img.brand_image {
+    border: 1px solid #00796b; 
+}
+
+
+footer {
+    background-color: #000; 
+    color: #fff; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 60px;
+    font-family: Arial, sans-serif;
+    flex-wrap: wrap;
+}
+
+
+.footer_section1 img {
+    width: 150px; 
+    height: auto;
+}
+
+
+.footer_section2 .foot_nav {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+.footer_section2 .foot_nav_item {
+    margin: 10px 0;
+    font-size: 18px;
+    text-align: left;
+    color: #fff;
+    cursor: pointer;
+}
+
+
+.footer_section3 {
+    text-align: right;
+    font-size: 16px;
+}
+
+.foot_sec3_h3 {
+    margin: 10px 0;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+
+.footer_section3 h3:first-child {
+    border-top: 1px solid #555; 
+    padding-top: 10px;
+}
+
+
+.footer_section2 {
+    position: relative;
+}
+
+.footer_section2::after {
+    content: '↑';
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #fff;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+
+p.success {
+    background-color: #28a745;
+    color: white;
+    border: 1px solid #218838;
+}
+
+
+p.error {
+    background-color: #dc3545;
+    color: white;
+    border: 1px solid #c82333;
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 20px;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    z-index: 1000;
+    display: none;
+}
+.notification.success {
+    background-color: #4caf50;
+}
+.notification.error {
+    background-color: #f44336;
+}

@@ -1,0 +1,112 @@
+/* General Layout */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.profile-photo {
+    width: 200px; /* Ширина изображения */
+    height: 250px; /* Высота изображения для прямоугольной формы */
+    object-fit: cover; /* Обрезает изображение, чтобы заполнить прямоугольник, сохраняя пропорции */
+    border: 2px solid #4a4a4a; /* Тонкая граница серого цвета */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Лёгкая тень */
+    margin-bottom: 20px; /* Отступ снизу */
+}
+
+
+.container {
+    display: flex;
+    width: 800px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Left Column - Image and Contact Information */
+.left-column {
+    background-color: #4b6cb7;
+    color: #fff;
+    padding: 40px 20px;
+    width: 35%;
+    text-align: center;
+}
+
+.left-column img {
+    border-radius: 50%;
+    width: 80%;
+    margin-bottom: 20px;
+}
+
+.left-column h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.left-column p {
+    margin: 5px 0;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+.contact-info p {
+    font-size: 14px;
+}
+
+/* Right Column - Personal Info, Skills, Experience, Education */
+.right-column {
+    padding: 40px;
+    width: 65%;
+}
+
+.right-column h2 {
+    font-size: 18px;
+    color: #4b6cb7;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    font-weight: bold;
+    margin-top: 20px;
+    color: #4b6cb7;
+}
+
+.section-content {
+    margin: 10px 0 20px;
+    line-height: 1.6;
+}
+
+.skill-list, .experience-list, .education-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.skill-list li, .experience-list li, .education-list li {
+    margin-bottom: 10px;
+}
+
+.skill-list li::before {
+    content: '• ';
+    color: #4b6cb7;
+    font-weight: bold;
+}
+
+/* Contact Information Links */
+.contact-info a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,222 @@
+body{
+    background-image: url(background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.fon {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+.back {
+    width: 130vh;
+    height: 70vh;
+    border-radius: 3%;
+    justify-content: center;
+    margin: auto;
+    background-color: #eeeeee;
+}
+.slides {
+    width: 60vh;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+    flex: 1;
+    top: 7vh;
+    left: 8vh;
+
+}
+.risk{
+  position: relative;
+  flex: 1;
+  bottom: 57vh;
+  left: 0vh ;
+}
+.nav{
+    display: flex;
+    position: relative;
+    bottom: 5vh;
+    left: 20vh;
+    }
+
+.change{
+    height: 2vh;
+    width: 10vh;
+    margin: 1.08vh;
+    cursor: pointer;
+    background-color:#ebeced;
+    border-radius: 30%;
+    transition: all .4s ease;
+    opacity: 0.5;
+}
+.change:hover{
+    opacity: 0.8;
+    transform: scale(1);
+
+}
+input[name=slider]{
+    position: absolute;
+    visibility: hidden;
+}
+
+.carus{
+    width: 200%;
+    height: 100%;
+    display: flex;
+}
+
+.foto{
+    width: 50%;
+    transition: all .6s ease;
+}
+
+.foto img{
+    width: 100%;
+    height: 100%;
+}
+
+#foto1:checked ~ .foto{
+    margin-left: 0;
+}
+#foto2 ~ .foto{
+    margin-left: -25%;
+}
+
+.name {
+    position: relative;
+    float: right;
+    padding-right: 10vh;
+    font-size: 12vh;
+    font-family: 'Courier New', Courier, monospace;
+    z-index: 2;
+
+}
+
+#tsize{
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8vh;
+    top: 23vh;
+    left: 70vh;
+    z-index: 2;
+
+}
+
+.choose{
+    position: relative;
+    left: 70vh;
+    top: 13vh;
+    display: flex;
+
+}
+.prechoose {
+    position: relative;
+    left: 72vh;
+    top: 27vh;
+
+}
+.choosee{
+  position: relative;
+    background-color:#bcbcbc;
+    width: 7vh;
+    height: 7vh;
+    cursor: pointer;
+    line-height: 7vh;
+    margin: 1vh;
+    text-align: center;
+    font-size: 3vh;
+    transition: all .4s ease;
+    border-radius: 7px
+    }
+.choosee:hover{
+    background-color: #f7f7f7;
+    transform: scale(1.15);
+}
+.choosee:active{
+    background-color: #b2b2b2;
+}
+input[type="radio"] {
+  margin: 3vh;
+}
+.colorall{
+position: relative;
+right: 5vh;
+top: 10vh ;
+}
+#tcolor{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8vh;
+    position: relative;
+    left:75vh;
+    top:16vh;
+    flex: 1;
+}
+#black{
+    transition: all .4s ease;
+    width: 7vh;
+    height: 7vh;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+#black:hover{
+    transform: scale(1.09);
+
+}
+#white{
+    transition: all .4s ease;
+    width: 7vh;
+    height: 7vh;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 100%;
+    font-size: 1.5vh;
+    font-weight: bold;
+}
+#white:hover{
+   transform: scale(1.09);
+}
+.cbut{
+    position: relative;
+    flex: 1;
+    left:75vh ;
+    top:15vh;
+    display: flex;
+
+}
+button{
+    margin: 1vh;
+
+}
+.buttonsubm{
+  position: relative;
+  display: block;
+  flex: 1;
+  top: 15vh;
+  left: 72vh;
+}
+
+button{
+transition: all .4s ease;
+  width: 40%;
+  height: 10vh;
+  cursor: pointer;
+  background-color: #bcbcbc;
+  border: none;
+  font-size: 5vh;
+  font-family: 'Courier New', Courier, monospace;
+  border-radius: 7px;
+}
+button:hover{
+  background-color: #f7f7f7;
+  transform: scale(1.09);
+}
+button:active{
+  background-color: #b2b2b2;
+}

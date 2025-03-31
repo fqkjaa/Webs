@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+ <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Winged - the only clothes with wings</title>
+<link rel="stylesheet" href="mig29style.css">
+    </head>
+     <body class="fon">
+<div class="back">
+  <div class="slides"> 
+    <div class="carus"> 
+       <input type="radio" name="slider" id="foto1" checked>
+       <input type="radio" name="slider" id="foto2">
+   
+       <div class="foto"> <img src="su27.png" alt=""> </div>
+       <div class="foto"> <img src="mig29back.png" alt=""> </div>
+    </div>
+    <div class="nav"> 
+       <label for="foto1" class="change"> </label>
+       <label for="foto2" class="change"> </label>
+    </div>
+   </div>
+   <div class="risk">
+    <div class="name"> 
+        Hoodie <br>  Su-27 </br> 
+    </div>
+    <div class="colorall">
+        <div id="tcolor"> Type </div> 
+        <div class="cbut">
+            <form action="mig29.html">
+            <button class="buttonc" id="black"> Mig-29 </button>
+          </form>
+          <form action="">
+            <button class="buttonc" id="white" > Su-27 </button>
+          </form> 
+        </div>
+    </div>
+    <form action="../../scripts/yourorder.php" method="post">  
+        <div class="sizeall">
+            <div id="tsize"> Size </div> 
+            <div class="prechoose"> 
+                <input type="radio" name="sizee" id="XS" value="XS">
+                <input type="radio" name="sizee" id="S"  value="S">
+                <input type="radio" name="sizee" id="M"  value="M">
+                <input type="radio" name="sizee" id="L" value="L">
+                <input type="radio" name="sizee" id="XL" value="XL">
+                <input type="radio" name="sizee" id="XXL" value="XXL">
+        
+            </div>   
+            <div class="choose"> 
+                <label for="XS" class="choosee"> XS </label>
+                <label for="S" class="choosee"> S </label>
+                <label for="M" class="choosee"> M </label>
+                <label for="L" class="choosee"> L </label>
+                <label for="XL" class="choosee"> XL </label>
+                <label for="XXL" class="choosee"> XXL </label>
+            </div>
+        </div>
+    <div class="buttonsubm">
+  <input type="hidden" name="product" value="Hoodie Su-27">
+  <input type="hidden" name="price" value="32.99">
+      <button type="submit" name="buy">Buy for 32.99€</button>
+    </div>
+  </div>
+</div>
+</form>
+</body>
+</html>
