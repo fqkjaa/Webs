@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <title>Ivan Marchenko: Vrtuľníky MI</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        h1 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        .container {
+            border: 2px solid black;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            width: fit-content;
+        }
+        .helicopter-item {
+            text-align: center;
+        }
+        .helicopter-item img {
+            width: 300px; 
+            height: 300px; 
+            object-fit: contain;
+        }
+        .helicopter-item p {
+            margin: 5px 0 0 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ivan Marchenko: Vrtuľníky MI</h1>
+    <div class="container">
+        <div class="helicopter-item">
+            <p>Mi-8</p>
+            <a href="mi8.jpg"><img src="mi8.jpg" alt="Mi-8"></a>
+        </div>
+        <div class="helicopter-item">
+            <p>Mi-2</p>
+            <a href="mi2.jpg"><img src="mi2.jpg" alt="Mi-2"></a>
+        </div>
+        <div class="helicopter-item">
+            <p>Mi-24</p>
+            <a href="mi24.jpg"><img src="mi24.jpg" alt="Mi-24"></a>
+        </div>
+        <div class="helicopter-item">
+            <p>Mi-17</p>
+            <a href="mi17.jpg"><img src="mi17.jpg" alt="Mi-17"></a>
+        </div>
+    </div>
+</body>
+</html>

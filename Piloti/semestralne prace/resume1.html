@@ -1,0 +1,159 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <style>
+        /* Основной стиль */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f4f8;
+            margin: 0;
+            padding: 20px;
+        }
+        
+        .resume-container {
+            max-width: 900px;
+            width: 100%;
+            background: #ffffff;
+            padding: 30px;
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 25px;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Блок с профилем */
+        .professional-details {
+            background: #eef5ff;
+            border-radius: 12px;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .professional-details img {
+            border-radius: 50%;
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border: 4px solid #dee9ff;
+            margin-bottom: 20px;
+        }
+
+        .details-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            font-size: 15px;
+            color: #333;
+        }
+
+        /* Блок "Обо мне" */
+        .about-me {
+            background: #ffffff;
+            padding: 20px;
+            border-left: 4px solid #5a91d1;
+            border-radius: 12px;
+        }
+
+        .about-me h2, .professional-details h2 {
+            color: #5a91d1;
+            margin: 0 0 15px;
+            font-size: 22px;
+        }
+
+        .about-me h3 {
+            color: #5a91d1;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+
+        .about-me p {
+            font-size: 15px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        .contact-info div {
+            background: #f8fafb;
+            padding: 8px;
+            border-radius: 8px;
+            border: 1px solid #e0e7ec;
+        }
+
+        /* Кнопка */
+        .button {
+            text-align: center;
+            display: inline-block;
+            padding: 15px 35px;
+            margin: 20px 0;
+            background-color: #5a91d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s, transform 0.3s;
+            font-size: 18px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+            align-self: center;
+            grid-column: 1 / -1;
+        }
+
+        .button:hover {
+            background-color: #487bb5;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+<body>
+    <div class="resume-container">
+        <div class="professional-details">
+            <img src="photo.jpg" alt="Yevhenii Shalamov photo">
+            <h2>Professional Details</h2>
+            <ul class="details-list">
+                <li><strong>Name:</strong> Yevhenii Shalamov</li>
+                <li><strong>Age:</strong> 17 Years old</li>
+                <li><strong>Location:</strong> Kosice, Slovakia</li>
+                <li><strong>Experience:</strong> 0 Years</li>
+                <li><strong>Degree:</strong> No</li>
+            </ul>
+        </div>
+
+        <div class="about-me">
+            <h2>About Me</h2>
+            <div class="contact-info">
+                <div><strong>Name:</strong> Yevhenii Shalamov</div>
+                <div><strong>Age:</strong> 17 Years</div>
+                <div><strong>Location:</strong> Kosice, Slovakia</div>
+                <div><strong>Experience:</strong> 0 Years</div>
+                <div><strong>Degree:</strong> No</div>
+                <div><strong>Career Level:</strong> No</div>
+                <div><strong>Phone:</strong> +421952170858</div>
+                <div><strong>Fax:</strong> +421952170858</div>
+                <div><strong>Email:</strong> 	yevhenii.shalamov@student.tuke.sk</div>
+                <div><strong>Website:</strong> http://shalamov24.euweb.cz	</div>
+            </div>
+            <h3>I'm a student of the Technical University in Kosice, manažer.</h3>
+            <p>Narodil som sa v Charkove a od deviateho ročníka ma fascinovala letecká doprava. Sníval som o kariére vojenského pilota, ale kvôli politickej situácii v krajine som musel odísť. Preto som sa rozhodol venovať tomu, čo ma najviac inšpiruje – manažmentu leteckej dopravy.</p>
+        </div>
+
+        <a class="button" href="index.html">Vráťte sa domov</a>
+    </div>
+</body>
+</html>

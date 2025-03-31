@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Marchenko: Menu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('back.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        header {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            font-size: 1.5em;
+            color: #fff;
+            background: rgba(0, 0, 0, 0.6);
+            width: 100%;
+            max-width: 600px;
+            border-radius: 8px;
+        }
+        .menu {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .button {
+            text-decoration: none;
+            color: #FF4500;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            width: 200px;
+            text-align: center;
+            transition: background 0.3s, color 0.3s;
+            font-size: 1em;
+        }
+        .button:hover {
+            background: #FF4500;
+            color: #fff;
+        }
+        .algorithm-buttons {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .algorithm-buttons.show {
+            display: flex;
+        }
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 0.9em;
+            color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Ivan Marchenko: Menu
+    </header>
+
+    <div class="menu">
+        <a class="button" href="cv.html">CV</a>
+        <a class="button" href="Ivan_Marchenko_web_cv4.html">Boeing 747</a>
+        <a class="button" href="vrtulniky.html">Vrtuľníky</a>
+        <div class="button" id="algorithms-toggle">Algoritmy</div>
+
+        <div class="algorithm-buttons" id="algorithm-buttons">
+            <a class="button" href="1algoritm.html">Algoritmus 1</a>
+            <a class="button" href="2algoritm.html">Algoritmus 2</a>
+            <a class="button" href="3algoritm.html">Algoritmus 3</a>
+            <a class="button" href="4algoritm.html">Algoritmus 4</a>
+            <a class="button" href="5algoritm.html">Algoritmus 5</a>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Marchenko Ivan.
+    </footer>
+
+    <script>
+        document.getElementById('algorithms-toggle').onclick = function() {
+            const algorithmButtons = document.getElementById('algorithm-buttons');
+            algorithmButtons.classList.toggle('show');
+        };
+    </script>
+</body>
+</html>

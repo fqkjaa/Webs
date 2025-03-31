@@ -1,0 +1,182 @@
+<!DOCTYPE html> 
+<html lang="sk">
+<head>
+  <meta charset="UTF-8">
+  <title>Konkurz na pracovné miesto</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #e6f7ff;
+    }
+    .container {
+      width: 800px;
+      margin: 20px auto;
+      border: 1px solid #4da6ff;
+      background-color: #f0faff;
+      padding: 15px;
+      border-radius: 8px;
+    }
+    .home-button {
+      display: block;
+      width: 100px;
+      padding: 10px;
+      background-color: #4da6ff;
+      color: #fff;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none;
+      margin-bottom: 15px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .home-button:hover {
+      background-color: #1f78d1;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    td {
+      padding: 6px;
+      border: 1px solid #4da6ff;
+      vertical-align: top;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+      width: 95%;
+      padding: 6px;
+      border: 1px solid #4da6ff;
+      border-radius: 4px;
+      box-sizing: border-box;
+    }
+    .actions {
+      text-align: center;
+      margin-top: 10px;
+    }
+    .actions input {
+      padding: 8px;
+      margin: 5px;
+      background-color: #4da6ff;
+      border: none;
+      color: #fff;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .actions input:hover {
+      background-color: #1f78d1;
+    }
+    fieldset {
+      border: 1px solid #4da6ff;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    legend {
+      font-weight: bold;
+      color: #1f78d1;
+    }
+  </style>
+</head>
+<body>
+
+<a href="index.html" class="home-button">Vráťte sa domov</a>
+<a href="http://localhost/sporthab/main.php" class="home-button">Перейти на Sporthab</a>
+
+
+<div class="container">
+  <form action="formulare.php" method="post">
+    <fieldset>
+      <legend>Osobné údaje</legend>
+      <table>
+        <tr>
+          <td>Meno:</td>
+          <td><input type="text" name="meno" required></td>
+          <td>Priezvisko:</td>
+          <td><input type="text" name="priezvisko" required></td>
+        </tr>
+        <tr>
+          <td>Email:</td>
+          <td><input type="email" name="email" required></td>
+          <td>Telefóne čislo:</td>
+          <td><input type="tel" name="telefon" required></td>
+        </tr>
+        <tr>
+          <td>Heslo:</td>
+          <td colspan="3"><input type="password" name="heslo" required></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Informácie o pozícii</legend>
+      <table>
+        <tr>
+          <td>Pozícia:</td>
+          <td colspan="3">
+            <select name="pozicia" required>
+              <option value="">Vyberte...</option>
+              <option value="pilot">Pilot</option>
+              <option value="letuška">Letuška</option>
+              <option value="ochrana_letiska">Ochrana letiska</option>
+              <option value="sekretarka">Sekretárka</option>
+              <option value="referent">Referent</option>
+              <option value="vodič">Vodič</option>
+              <option value="upratovačka">Upratovačka</option>
+              <option value="predavač">Predavač</option>
+              <option value="vedúci_oddelenia">Vedúci oddelenia</option>
+              <option value="poradca">Poradca</option>
+            </select>
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Skúsenosti a kvalifikácie</legend>
+      <table>
+        <tr>
+          <td>Najvyššie dosiahnuté vzdelanie:</td>
+          <td colspan="3">
+            <select name="vzdelanie" required>
+              <option value="">Vyberte...</option>
+              <option value="zakladne">Základné</option>
+              <option value="stredne">Stredné</option>
+              <option value="vysoke">Vysoké</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Znalosť jazykov:</td>
+          <td colspan="3">
+            <input type="checkbox" name="jazyky[]" value="angličtina"> Angličtina
+            <input type="checkbox" name="jazyky[]" value="nemčina"> Nemčina
+            <input type="checkbox" name="jazyky[]" value="francúzština"> Francúzština
+            <input type="checkbox" name="jazyky[]" value="ruština"> Ruština
+          </td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <fieldset>
+      <legend>Ďalšie informácie</legend>
+      <table>
+        <tr>
+          <td>Pripomienky:</td>
+          <td colspan="3"><textarea name="pripomienky" rows="2">chcem viac voliteľných predmetov</textarea></td>
+        </tr>
+      </table>
+    </fieldset>
+
+    <div class="actions">
+      <input type="reset" value="Vymazať">
+      <input type="submit" value="Odoslať">
+    </div>
+  </form>
+</div>
+
+</body>
+</html>

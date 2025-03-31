@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa helikoptéry</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #159cc9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #fff;
+            padding-top: 50px;
+        }
+        .top-bar {
+            width: 100%;
+            background-color: #06fbef;
+            color: #9000ff;
+            padding: 15px;
+            text-align: center;
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .top-bar .button {
+            position: absolute;
+            left: 20px;
+            top: 15px;
+            color: #9000ff;
+            background-color: #06fbef;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .top-bar .button:hover {
+            background-color: #159cc9;
+            color: white;
+        }
+        .top-bar h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .gallery-container {
+            margin-top: 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .photo-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+        .gallery-item {
+            text-align: center;
+        }
+        .gallery-item img {
+            width: 250px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        .gallery-item img:hover {
+            transform: scale(1.1);
+        }
+        .caption {
+            margin-top: 5px;
+            font-weight: bold;
+            font-size: 20px;
+        }
+        .fullscreen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(50, 45, 45, 0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 20;
+        }
+        .fullscreen img {
+            max-width: 80%;
+            max-height: 80%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(23, 23, 23, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-bar">
+        <a href="index.html" class="button">home</a>
+        <h1>Mapa vrtuľníki</h1>
+    </div>
+
+    <div class="gallery-container">
+        <p class="photo-title">helikoptéry</p>
+
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="photo/mi-8.jpg" alt="Mi-8" onclick="openFullscreen(this)">
+                <div class="caption">Mi-8</div>
+            </div>
+            <div class="gallery-item">
+                <img src="photo/mi-2.jpg" alt="Mi-2" onclick="openFullscreen(this)">
+                <div class="caption">Mi-2</div>
+            </div>
+            <div class="gallery-item">
+                <img src="photo/mi-24.jpg" alt="Mi-24" onclick="openFullscreen(this)">
+                <div class="caption">Mi-24</div>
+            </div>
+            <div class="gallery-item">
+                <img src="photo/mi-17.jpg" alt="Mi-17" onclick="openFullscreen(this)">
+                <div class="caption">Mi-17</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fullscreen" id="fullscreen" onclick="closeFullscreen()">
+        <img id="fullscreen-img" src="" alt="Enlarged Image">
+    </div>
+
+    <script>
+        function openFullscreen(img) {
+            const fullscreen = document.getElementById("fullscreen");
+            const fullscreenImg = document.getElementById("fullscreen-img");
+            fullscreenImg.src = img.src;
+            fullscreen.style.display = "flex";
+        }
+
+        function closeFullscreen() {
+            const fullscreen = document.getElementById("fullscreen");
+            fullscreen.style.display = "none";
+        }
+    </script>
+
+</body>
+</html>

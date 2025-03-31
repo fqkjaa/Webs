@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan Marchenko: Osobná karta</title>
+    <style>
+        * {
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+        }
+
+        .resume {
+            width: 900px; 
+            background-color: #ffffff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            padding: 20px; 
+        }
+
+        h2 {
+            font-size: 18px; 
+            color: #333333;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+            vertical-align: top;
+        }
+
+        .left-panel {
+            background-color: #eeeeee;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-pic {
+            width: 290px; 
+            height: 200px; 
+            border-radius: 4px; 
+            margin-bottom: 20px;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #333333;
+        }
+
+        .details p {
+            font-size: 14px;
+            color: #666666;
+            margin: 8px 0;
+        }
+
+        .about-me .info-table {
+            width: 100%;
+            font-size: 14px;
+            color: #666666;
+        }
+
+        .about-me .info-table td {
+            padding: 5px;
+            vertical-align: top;
+        }
+
+        .description {
+            margin-top: 20px;
+        }
+
+        .description p {
+            font-size: 14px;
+            color: #666666;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <div class="resume">
+        <table>
+            <tr>
+                <td class="left-panel" width="35%">
+                    <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
+                    <h2>Professional Details</h2>
+                    <p><span class="label">Meno a Priezvisko:</span>Ivan Marchenko</p>
+                    <p><span class="label">Rokov:</span> 17 rokov</p>
+                    <p><span class="label">Location:</span> Kosice, Slovakia</p>
+                    <p><span class="label">Pozicia:</span> Student</p>
+                    <p><span class="label">Oddelenie:</span> LF</p>
+                </td>
+                <td width="65%">
+                    <div class="about-me">
+                        <h2>About Me</h2>
+                        <table class="info-table">
+                            <tr>
+                                <td><span class="label">Meno a Priezvisko:</span></td>
+                                <td>Ivan Marchenko</td>
+                                <td><span class="label">Rokov:</span></td>
+                                <td>17 rokov</td>
+                            </tr>
+                            <tr>
+                                <td><span class="label">Location:</span></td>
+                                <td>Kosice, Slovakia</td>
+                                <td><span class="label">Pozicia:</span></td>
+                                <td>Student</td>
+                            </tr>
+                            <tr>
+                                <td><span class="label">Oddelenie:</span></td>
+                                <td>LF</td>
+                                <td><span class="label">Career Level:</span></td>
+                                <td>Mid-Level</td>
+                            </tr>
+                            <tr>
+                                <td><span class="label">Telefon:</span></td>
+                                <td>+421 952 170 705</td>
+                                <td><span class="label">Fax:</span></td>
+                                <td>+421 952 170 705</td>
+                            </tr>
+                            <tr>
+                                <td><span class="label">E-mail:</span></td>
+                                <td>marchivananat@gmail.com</td>
+                                <td><span class="label">Website:</span></td>
+                                <td>http://ivan-marchenko.xf.cz/</td>
+                            </tr>
+                        </table>
+                    </div>
+                    <div class="description">
+                        <h2>Trochu o mne</h2>
+                        <p>Rád počúvam hudbu, život, letectvo, vesmír.</p>
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

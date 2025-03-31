@@ -1,0 +1,207 @@
+/* Общий стиль для body */
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to bottom, #f0f8ff, #e6e6fa);
+    color: #333;
+}
+
+/* Стили навигационной панели */
+.navs {
+    display: flex;
+    justify-content: center;
+    background-color: #0066cc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav_elem {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    transition: color 0.3s, transform 0.2s;
+}
+
+.nav_elem i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+.nav_elem:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Стили для header */
+.header, .l1_header {
+    text-align: center;
+    background: url('header-bg.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 60px 20px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.head_h3, .l1_h_h1 {
+    margin: 15px 0;
+    font-size: 1.8em;
+    line-height: 1.4;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Стили для основного контента */
+.main, .l1_main {
+    padding: 30px 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main_section_1, .main_section_2 {
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+.main_section_1:hover, .main_section_2:hover {
+    transform: scale(1.02);
+}
+
+.section_p, .l1_main_info {
+    line-height: 1.8;
+    font-size: 1.1em;
+}
+
+/* Стили для галереи */
+.section_gallery {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.section_gallery_h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+    color: #004080;
+}
+
+.gallery_img_sec {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 10px;
+}
+
+.gallery_img_item {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.gallery_img_item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Стили для кнопок */
+
+
+
+.ow_button {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(to right, #0073e6, #005bb5);
+    padding: 24px 50px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s, transform 0.2s, box-shadow 0.3s;
+}
+
+.ow_button:hover {
+    background: linear-gradient(to right, #005bb5, #0073e6);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.ofweb_section {
+    text-align: center; /* Центрирует весь контент внутри секции */
+    margin-top: 30px; /* Отступ сверху */
+    padding: 20px; /* Отступы внутри секции */
+    background: none; /* Убираем фон */
+    box-shadow: none; /* Убираем лишние тени */
+    border: none; /* Убираем границы */
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+
+
+/* Стили списка фактов */
+.facts {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.facts_item {
+    margin: 10px 0;
+    padding: 10px;
+    background: #e6f7ff;
+    border-left: 5px solid #0066cc;
+    border-radius: 5px;
+    line-height: 1.6;
+}
+
+/* Стили между секциями */
+.between_sections {
+    background: linear-gradient(to right, #e6e6fa, #f0f8ff);
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.between_p {
+    margin: 0;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .navs {
+        flex-wrap: wrap;
+    }
+
+    .gallery_img_item {
+        height: 120px;
+    }
+
+    .head_h3, .l1_h_h1 {
+        font-size: 1.5em;
+    }
+
+    .facts_item {
+        font-size: 1em;
+    }
+}
